@@ -10,4 +10,6 @@ const roleSchema = new Schema({
 // { name: 'admin', _id: '54l54654a6s5d465as45a4s6d' }
 // { name: 'moderator', _id: '3654654a6s5d465as45a4s6d' }
 
+// se debe crear roles por defecto (carpeta libs)
+
 export default model('roles', roleSchema);

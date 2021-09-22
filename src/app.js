@@ -2,11 +2,13 @@
 import express from "express";
 import morgan from "morgan";
 import pkg from "../package.json";
+
+import { createRoles } from "./libs/initSetup";
 import productsRoutes from "./routes/products.routes";
 import authRoutes from "./routes/auth.routes";
+
 const app = express();
-
-
+createRoles(); // se crea los roles despues que inicia express
 
 // Guardar variables en expres y obtener el valor (Reutilizar recursos)
 app.set('pkg_json', pkg);
