@@ -153,7 +153,7 @@ mongodb atlas
 ## Environment Variables
 
 ```
-S.O. Unix (Linur or Mac):
+S.O. Unix (Linux or Mac):
 
 export PORT=2000
 export DB_PASSWORD=1234567890
