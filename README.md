@@ -187,8 +187,24 @@ TOKEN_FB=456asd45a6dSAS546AA54654
 
 require('dotenv').config();
 
+```
 
-
+## Emails
 
 ```
 
+Enviar Correo Electrónico con NodeJS:
+
+npm install nodemailer
+
+https://github.com/nodemailer/nodemailer
+https://nodemailer.com/about/
+
+Plantillas HTML:
+
+https://es.sendinblue.com/blog/plantillas-de-email-gratuitas-html/
+https://acumbamail.com/blog/5-plantillas-html-gratuitas-email-marketing/
+https://stripo.email/es/templates/
+
+
+```
