@@ -87,6 +87,18 @@ app.js = para configurar la aplicación.
 config.js = crear propiedades de configuración.
 database.js = conexión de la base de datos, user, etc.
 
+Libreria DOTENV:
+
+g=geo
+g=/g=1-6
+
+En la raíz del proyecto crar un fichero .env y registrar las variables de entorno de la base de datos y contraseñas:
+
+FIle: .env
+
+DB_MONGO=mongodb+srv://user:<password>>@cluster0.pebzw.mongodb.net/company-db
+SECRET=secret-password-company-api
+
 
 ```
 
@@ -109,6 +121,74 @@ https://www.npmjs.com/package/multer
 
 busboy:
 https://www.npmjs.com/package/busboy
+
+```
+
+## Pendientes
+
+```
+Códigos de estado de respuesta HTTP:
+https://developer.mozilla.org/es/docs/Web/HTTP/Status
+
+Bibliotecas de validación de express:
+
+express validator:
+https://express-validator.github.io/docs/
+
+joi npm:
+
+https://www.npmjs.com/package/joi
+
+Despliegue de APIS:
+
+Heroku
+Docker
+
+Database:
+
+mongodb atlas
+
+```
+
+## Environment Variables
+
+```
+S.O. Unix (Linur or Mac):
+
+export PORT=2000
+export DB_PASSWORD=1234567890
+export TOKEN_FB=456asd45a6dSAS546AA54654
+
+
+S.O. Windows:
+
+set PORT=2000
+set DB_PASSWORD=1234567890
+set TOKEN_FB=456asd45a6dSAS546AA54654
+
+SOlVE CROSS PLATFORM (Node.js):
+
+CROSS-ENV:
+
+npm i cross-env -S
+En lugar de tipear export o set, se usa cross-env, funciona para Windows, Linux y Mac.
+npx cross-env PORT=4000 node index.js
+process.env.PORT
+
+DOTENV:
+
+npm i dotenv -S
+
+Create file .env and writting:
+
+PORT=2000
+DB_PASSWORD=1234567890
+TOKEN_FB=456asd45a6dSAS546AA54654
+
+require('dotenv').config();
+
+
+
 
 ```
 

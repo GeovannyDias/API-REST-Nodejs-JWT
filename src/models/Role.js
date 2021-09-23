@@ -1,6 +1,9 @@
 'use strict';
 import { Schema, model } from "mongoose";
 
+// por ser pocos se puede quemar los roles para validar o hacer una consulta a la DB
+export const ROLES = ['user', 'admin', 'moderator']; 
+
 const roleSchema = new Schema({
     name: String
 }, {

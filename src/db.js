@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config(); // Ejecuta dotenv y busca las variables de entorno de forma global en el proyecto
 
-mongoose.connect('mongodb+srv://geo:geo123456@cluster0.pebzw.mongodb.net/company-db')
+mongoose.connect(process.env.DB_MONGO)
 .then(db=> console.log('DB is Connected!'))
 .catch(error =>console.log('DB Error:', error));
