@@ -87,14 +87,14 @@ app.js = para configurar la aplicación.
 config.js = crear propiedades de configuración.
 database.js = conexión de la base de datos, user, etc.
 
-Libreria DOTENV:
+Dependencia DOTENV:
 
 g=geo
 g=/g=1-6
 
 En la raíz del proyecto crar un fichero .env y registrar las variables de entorno de la base de datos y contraseñas:
 
-FIle: .env
+File: .env
 
 DB_MONGO=mongodb+srv://user:<password>>@cluster0.pebzw.mongodb.net/company-db
 SECRET=secret-password-company-api
